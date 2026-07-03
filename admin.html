@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<header>
+    <a href="index.html" target="_self">
+        <img src="assets/banners/banner_adm.jpg" alt="Banner do Mangá">
+    </a>
+</header>
+
+<nav> 
+    <button onclick="window.location.href='index.html'" id="inicio">Início</button> 
+    <button id="mangas">Mangás</button> 
+  
+</nav>
+
+<body>
+<div class="admin-container">
+    <section class="form-section">
+        <h2>Gerenciar Mangá</h2>
+        <form id="admin-form">
+            <input type="hidden" id="manga-id"> <!-- Campo invisível para saber se estamos editando -->
+            <input type="text" id="nome" placeholder="Nome do Mangá" required>
+            <input type="number" id="volume" placeholder="Volume" required>
+            <input type="text" id="autor" placeholder="Autor" required>
+            <input type="number" id="preco" placeholder="Preço" step="0.01" required>
+            <input type="text" id="capa" placeholder="URL da Capa">
+            <input type="number" id="estoque" placeholder="Quantidade em Estoque" required>
+            <button type="submit" id="btn-salvar">Salvar Mangá</button>
+            <button type="button" id="btn-limpar">Limpar/Novo</button>
+        </form>
+        <a href="index.html">Voltar para a Loja</a>
+    </section>
+
+    <section class="list-section">
+        <h2>Inventário</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mangá</th>
+                    <th>Vol</th>
+                    <th>Estoque</th>
+                    <th>Preço</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-mangas">
+                <!-- O JS vai preencher isso aqui -->
+            </tbody>
+        </table>
+    </section>
+</div>
+</body>
+<script src="admin.js"></script>
+</html>

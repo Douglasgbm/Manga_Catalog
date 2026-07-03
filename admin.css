@@ -1,0 +1,186 @@
+header img {
+    width: 100%;      /* Faz a imagem ocupar toda a largura da tela */
+    max-width: 1200px; /* Impede que ela fique gigante em monitores muito largos */
+    height: auto;     /* Mantém a proporção da imagem para não achatar */
+    display: block;   /* Remove aquele espacinho branco que fica embaixo da imagem */
+    margin: 0 auto;   /* Centraliza a imagem na página */
+}
+
+nav {
+    display: flex;            /* Ativa o modo "flexível" */
+    justify-content: center; /* Centraliza os botões na horizontal */
+    gap: 15px;                /* Cria um espaço igual entre cada botão */
+    background-color: #333;   /* Um cinza escuro para dar contraste */
+    padding: 15px;            /* Espaço interno para a barra não ficar "apertada" */
+}
+
+nav button {
+    padding: 8px 16px;        /* Deixa o botão mais gordinho e confortável */
+    cursor: pointer;          /* Faz a setinha virar a "mãozinha" ao passar o mouse */
+    border: none;             /* Tira aquela borda padrão feia do navegador */
+    border-radius: 5px;       /* Arredonda levemente as pontas */
+    background-color: #333;   /* Cor de fundo do botão */
+    transition: 0.3s;        /* Faz a mudança de cor ser suave, não instantânea */
+    color: white;              /* Cor do texto do botão */ 
+}
+
+nav button:hover {
+    background-color: #ccc;  /* Muda a cor quando você passa o mouse por cima */
+    color: #000000;              /* Muda a cor do texto para dar contraste */
+}
+
+ /* Layout Principal do Admin */
+.admin-container {
+    display: grid;
+    grid-template-columns: 350px 1fr; /* Formulário fixo na esquerda, tabela expande na direita */
+    gap: 30px;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    min-height: 100vh;
+}
+.admin-container a {
+    color: #666;            /* Muda a cor do azul para cinza */
+    text-decoration: none;  /* Remove o sublinhado */
+    text-align: center;     /* Centraliza o texto */
+    display: inline-block; /* Permite que a margem funcione */
+    margin-top: 20px;      /* Ajuste esse valor até ficar na altura que você quer */
+    color: #666;
+    text-decoration: none;
+}
+
+.admin-container a:hover {
+    color: #333;               /* Escurece um pouco no hover */
+    text-decoration: underline; /* O sublinhado volta só no hover para dar feedback */
+}
+
+/* Seção do Formulário */
+.form-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: fit-content;
+    position: sticky; /* O formulário fica parado enquanto você rola a tabela */
+    top: 40px;
+    text-align: center;
+}
+
+.form-section h2 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #2ecc71;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-section input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.form-section button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-salvar {
+    background-color: #2ecc71;
+    color: white;
+}
+
+#btn-salvar:hover {
+    background-color: #27ae60;
+}
+
+#btn-limpar {
+    background-color: #eee;
+    color: #666;
+}
+
+#btn-limpar:hover {
+    background-color: #ddd;
+}
+
+/* Seção da Tabela/Inventário */
+.list-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.list-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #2ecc71;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilo geral para os botões de ação na tabela */
+.btn-edit, .btn-delete {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin: 4px;
+    font-size: 12px;
+}
+
+/* Botão Editar - Azul ou Amarelo */
+.btn-edit {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #2980b9;
+}
+
+/* Botão Excluir - Vermelho */
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}

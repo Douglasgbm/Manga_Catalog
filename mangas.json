@@ -1,0 +1,47 @@
+[
+    {
+        "nome": "Naruto Classico",
+        "volume": 1,
+        "autor": "Kishimoto",
+        "preco": 20.0,
+        "capa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb-Qhl6Und0lmtzcyq9lD98azgj5uBHTrMlIQkUAvwXg&s=10",
+        "estoque": 4,
+        "id": 1
+    },
+    {
+        "nome": "One Piece",
+        "volume": 1,
+        "autor": "Echiro Oda",
+        "preco": 35.0,
+        "capa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUMoYl_Bfb9KqDsCMb5jRS7U-zzyaYBO2jnOdc2Nd35g&s",
+        "estoque": 5,
+        "id": 2
+    },
+    {
+        "nome": "Dragon Ball Z",
+        "volume": 1,
+        "autor": "Akira Toriama",
+        "preco": 25.0,
+        "capa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkdCvcBcc1Moo077YnySPhpdN8QrHSTq65vOIMAIBYUg&s=10",
+        "estoque": 3,
+        "id": 3
+    },
+    {
+        "nome": "Bleach",
+        "volume": 1,
+        "autor": "Tite Kubo",
+        "preco": 25.0,
+        "capa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcVbfmZBHsnAZsxsx6xhFME1WBlHNzZvm8m2b_jfBjqg&s=10",
+        "estoque": 5,
+        "id": 4
+    },
+    {
+        "nome": "Berserke",
+        "volume": 1,
+        "autor": "Kentaro Miura",
+        "preco": 25.0,
+        "capa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQKx9V-fZQfNc2dG0IxSbp38ha-sCWgFTi2GISWhqbIA&s=10",
+        "estoque": 3,
+        "id": 5
+    }
+]
